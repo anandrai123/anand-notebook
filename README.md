@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# MERN Stack Anand-Notepad Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview:
+This project is a simple notepad application built using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to register, login, and manage daily updates in a secure and user-friendly manner.
 
-## Available Scripts
+## Features:
+- User authentication with bcrypt.js for password hashing and JWT for session management.
+- MongoDB database for storing user data and notepad entries.
+- Express.js server for handling HTTP requests and routing.
+- React frontend for providing an interactive user interface.
+- Daily update notepad with CRUD operations (Create, Read, Update, Delete) functionality.
+- Implementation of salt & pepper concept for enhanced password security.
 
-In the project directory, you can run:
+## Technologies Used:
+- MongoDB
+- Express.js
+- React
+- Node.js
+- bcrypt.js (for password hashing)
+- JWT (JSON Web Tokens)
+- React Router (for frontend routing)
 
-### `npm start`
+## Implementation Details:
+1. **User Authentication**: Implement registration, login, and logout functionalities using bcrypt.js for password hashing and JWT for session management.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **MongoDB Setup**: Set up MongoDB to store user data and notepad entries. Define schemas for users and notepad entries.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Express.js Server**: Create an Express.js server to handle HTTP requests and responses. Define API routes for user authentication and notepad CRUD operations.
 
-### `npm test`
+4. **React Frontend**: Build a React frontend with components for user authentication and notepad management. Implement routing using React Router.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **Daily Update Notepad**: Implement a notepad feature where users can make daily updates. Display the latest updates on the home screen. Allow users to edit existing notepad details or delete them.
 
-### `npm run build`
+6. **Higher Privacy with Salt & Pepper**: Use bcrypt.js to hash passwords with a combination of salt and pepper for enhanced security. Store the pepper securely and separate from the database.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage:
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Set up MongoDB and configure the connection in the server code.
+4. Start the server using `npm start` and the client using `npm start` in separate terminal windows.
+5. Access the application in your browser at the specified URL.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributions:
+Contributions are welcome! Feel free to open issues or pull requests for any improvements or bug fixes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
